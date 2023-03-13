@@ -4,9 +4,10 @@ import java.awt.Color;
  * flower support class 
  * creates a flower of a size and colour 
  * it can grow.
+ * it can tell the driver class where it is on the screen .
  *
  * @author ruth moore 
- * @version 13/03/2023
+ * @version 14/03/2023
  */
 public class Flower
 {
@@ -45,6 +46,25 @@ public class Flower
         
     }
     
+    //getter left 
+    public double getLeft(){
+    return this.left;
+    }
+    
+    //getter right 
+    public double getRight(){
+        return this.left +this.flowerSize;
+        
+    }
+
+    // getter top 
+    public double getTop(){
+    return this.top;
+}
+    
+    public double getBottom(){
+    return this.bottom;
+}
 
     /**
     set left 
